@@ -11,6 +11,7 @@
         "type": "git",
         "url": "https://github.com/chausme/basic-event-bus.git"
     },
+    "keywords": ["event-bus", "event bus", "event", "bus"],
     "author": "chausme",
     "license": "MIT",
     "devDependencies": {
