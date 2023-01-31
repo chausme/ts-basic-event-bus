@@ -1,10 +1,11 @@
 {
-    "name": "basic-event-bus",
+    "name": "ts-basic-event-bus",
     "version": "1.0.0",
     "description": "Basic event bus implementation",
-    "main": "index.js",
+    "main": "dist/index.js",
     "type": "module",
     "scripts": {
+        "prepublish": "tsc",
         "eslint": "npx eslint index.js"
     },
     "repository": {
