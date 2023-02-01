@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "prepublish": "tsc",
-        "eslint": "npx eslint index.js"
+        "eslint": "npx eslint index.js",
+        "test": "node tests/index.js"
     },
     "repository": {
         "type": "git",

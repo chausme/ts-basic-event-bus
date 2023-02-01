@@ -1,6 +1,6 @@
 export type CallbackType = (...args: any) => any;
 
-export default class EventBus {
+export const EventBus = class EventBus {
     #listeners: Record<string, CallbackType[]>;
 
     constructor() {
@@ -32,4 +32,4 @@ export default class EventBus {
             listener(...args);
         });
     }
-}
+};

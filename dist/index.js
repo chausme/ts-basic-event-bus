@@ -9,32 +9,33 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var _EventBus_listeners;
-export default class EventBus {
-    constructor() {
-        _EventBus_listeners.set(this, void 0);
-        __classPrivateFieldSet(this, _EventBus_listeners, {}, "f");
-    }
-    on(event, callback) {
-        if (!__classPrivateFieldGet(this, _EventBus_listeners, "f")[event]) {
-            __classPrivateFieldGet(this, _EventBus_listeners, "f")[event] = [];
+var _EventBus_listeners, _a;
+export const EventBus = (_a = class EventBus {
+        constructor() {
+            _EventBus_listeners.set(this, void 0);
+            __classPrivateFieldSet(this, _EventBus_listeners, {}, "f");
         }
-        __classPrivateFieldGet(this, _EventBus_listeners, "f")[event].push(callback);
-    }
-    off(event, callback) {
-        if (!__classPrivateFieldGet(this, _EventBus_listeners, "f")[event]) {
-            throw new Error(`There is no event: ${event}`);
+        on(event, callback) {
+            if (!__classPrivateFieldGet(this, _EventBus_listeners, "f")[event]) {
+                __classPrivateFieldGet(this, _EventBus_listeners, "f")[event] = [];
+            }
+            __classPrivateFieldGet(this, _EventBus_listeners, "f")[event].push(callback);
         }
-        __classPrivateFieldGet(this, _EventBus_listeners, "f")[event] = __classPrivateFieldGet(this, _EventBus_listeners, "f")[event].filter(listener => listener !== callback);
-    }
-    emit(event, ...args) {
-        if (!__classPrivateFieldGet(this, _EventBus_listeners, "f")[event]) {
-            throw new Event(`There is no event: ${event}`);
+        off(event, callback) {
+            if (!__classPrivateFieldGet(this, _EventBus_listeners, "f")[event]) {
+                throw new Error(`There is no event: ${event}`);
+            }
+            __classPrivateFieldGet(this, _EventBus_listeners, "f")[event] = __classPrivateFieldGet(this, _EventBus_listeners, "f")[event].filter(listener => listener !== callback);
         }
-        __classPrivateFieldGet(this, _EventBus_listeners, "f")[event].forEach(listener => {
-            listener(...args);
-        });
-    }
-}
-_EventBus_listeners = new WeakMap();
+        emit(event, ...args) {
+            if (!__classPrivateFieldGet(this, _EventBus_listeners, "f")[event]) {
+                throw new Event(`There is no event: ${event}`);
+            }
+            __classPrivateFieldGet(this, _EventBus_listeners, "f")[event].forEach(listener => {
+                listener(...args);
+            });
+        }
+    },
+    _EventBus_listeners = new WeakMap(),
+    _a);
 //# sourceMappingURL=index.js.map
