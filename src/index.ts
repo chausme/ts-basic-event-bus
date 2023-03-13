@@ -25,7 +25,7 @@ export const EventBus = class EventBus {
 
     emit(event: string, ...args: any) {
         if (!this.#listeners[event]) {
-            throw new Event(`There is no event: ${event}`);
+            throw new Error(`There is no event: ${event}`);
         }
 
         this.#listeners[event].forEach(listener => {

@@ -5,7 +5,7 @@
     "main": "dist/index.js",
     "type": "module",
     "scripts": {
-        "eslint": "npx eslint index.js",
+        "eslint": "npx eslint src/*",
         "test": "jest",
         "tswatch": "tsc --watch"
     },
@@ -22,6 +22,7 @@
         "@typescript-eslint/parser": "5.48.1",
         "eslint": "8.31.0",
         "eslint-config-airbnb-base": "15.0.0",
+        "eslint-config-airbnb-typescript": "17.0.0",
         "eslint-config-prettier": "8.6.0",
         "eslint-plugin-import": "2.26.0",
         "jest": "29.4.1",
