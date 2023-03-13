@@ -2,19 +2,13 @@
 
 Basic event bus TypeScript implementation
 
-## Features
-
--   Subscribe a callback for an event
--   Unsubscribe a callback from an event
--   Emit an event and execute related callbacks
-
 ## Usage
 
-`eventBus.on(event: string, callback: Function)` - subscribes the callback for an event, creates the event if it doesn't exist
+`eventBus.on(event: string, callback: Function)` - subscribe the callback for an event, the event will be created if it doesn't exist
 
-`eventBus.off(event: string, callback: Function)` - unsubscribes the callback and all its potential duplicates from an event, throws an error if the event doesn't exist
+`eventBus.off(event: string, callback: Function)` - unsubscribe the callback and all its potential duplicates from an event, an error will be thrown if the event doesn't exist
 
-`eventBus.emit(event: string, ...args: any)` - emits the event and executes related callbacks
+`eventBus.emit(event: string, ...args: any)` - emit the event with related callbacks execution
 
 ## Example
 
