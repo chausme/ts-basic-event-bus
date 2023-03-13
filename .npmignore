@@ -6,4 +6,6 @@ package-lock.json
 # Extra dev dependencies
 .eslintrc.json
 .prettierrc.json
-tests/
+jest.config.json
+tsconfig.json
+src/
