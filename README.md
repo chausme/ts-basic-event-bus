@@ -1,14 +1,16 @@
 # Basic Event Bus
 
+[![npm](https://img.shields.io/npm/v/ts-basic-event-bus.svg?style=flat-square)](https://www.npmjs.com/package/ts-basic-event-bus)
+
 Basic event bus TypeScript implementation
 
 ## Usage
 
-`eventBus.on(event: string, callback: Function)` - subscribe the callback for an event, the event will be created if it doesn't exist
+**`eventBus.on(event: string, callback: Function)`** - subscribe the callback for an event, the event will be created if it doesn't exist
 
-`eventBus.off(event: string, callback: Function)` - unsubscribe the callback and all its potential duplicates from an event, an error will be thrown if the event doesn't exist
+**`eventBus.off(event: string, callback: Function)`** - unsubscribe the callback and all its potential duplicates from an event, an error will be thrown if the event doesn't exist
 
-`eventBus.emit(event: string, ...args: any)` - emit the event with related callbacks execution
+**`eventBus.emit(event: string, ...args: any)`** - emit the event with related callbacks execution
 
 ## Example
 
