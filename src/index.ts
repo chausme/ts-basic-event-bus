@@ -1,4 +1,4 @@
-export type CallbackType = (...args: any) => any;
+export type CallbackType<T = any, R = void> = (...args: T[]) => R;
 
 export const EventBus = class EventBus {
     #listeners: Record<string, CallbackType[]>;
