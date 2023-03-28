@@ -1,6 +1,6 @@
 # Basic Event Bus
 
-[![npm](https://img.shields.io/npm/v/ts-basic-event-bus.svg?style=flat-square)](https://www.npmjs.com/package/ts-basic-event-bus)
+[![npm](https://img.shields.io/npm/v/ts-basic-event-bus.svg?style=flat-square)](https://www.npmjs.com/package/ts-basic-event-bus) ![Jest Tests workflow](https://img.shields.io/github/actions/workflow/status/chausme/ts-basic-event-bus/tests.yml)
 
 Basic event bus TypeScript implementation
 
