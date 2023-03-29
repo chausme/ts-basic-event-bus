@@ -1,10 +1,11 @@
 {
     "name": "ts-basic-event-bus",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Basic event bus TypeScript implementation",
     "main": "dist/index.js",
     "type": "module",
     "scripts": {
+        "build": "tsc",
         "eslint": "npx eslint src/*",
         "test": "jest",
         "tswatch": "tsc --watch"
