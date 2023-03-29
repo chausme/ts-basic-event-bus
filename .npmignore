@@ -4,6 +4,7 @@ package-lock.json
 *.code-workspace
 
 # Extra dev dependencies
+.github
 .eslintrc.json
 .prettierrc.json
 jest.config.json
