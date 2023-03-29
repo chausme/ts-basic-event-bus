@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1] - 2023-03-29
+
+### Fixed
+
+-   Add .github folder into .npmignore.
+
 ## [1.1.0] - 2023-03-29
 
 ### Added
